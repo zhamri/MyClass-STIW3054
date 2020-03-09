@@ -21,3 +21,12 @@ class MyThread extends Thread {
         System.out.println("After changing name of t1:" + t1.getName());
     }
 }
+
+/***
+ * Name of t1:Thread-0
+ * Name of t2:Thread-1
+ * id of t1:12
+ * running...
+ * After changing name of t1:STIW3054
+ * running...
+ */
