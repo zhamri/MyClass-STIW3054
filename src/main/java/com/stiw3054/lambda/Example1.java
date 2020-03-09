@@ -3,16 +3,16 @@ package com.stiw3054.lambda;
 public class Example1 {
     public static void main(String[] args) {
 
-        Greeting g1 = (n) -> System.out.println("Hello " + n);
-        g1.hello("zhamri");
+        Greeting g1 = () -> System.out.println("Hello Java");
+        g1.hello();
     }
 
     interface Greeting {
-        void hello(String name);
+        void hello();
     }
 }
 
 
 /***
- * Hello zhamri
+ * Hello Java
  */

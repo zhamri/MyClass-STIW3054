@@ -3,12 +3,12 @@ package com.stiw3054.lambda;
 public class Example2 {
     public static void main(String[] args) {
 
-        Greeting g1 = (n) -> "Hello " + n;
-        System.out.println(g1.hello("zhamri"));
+        Greeting g1 = (n) -> System.out.println("Hello " + n);
+        g1.hello("zhamri");
     }
 
     interface Greeting {
-        String hello(String name);
+        void hello(String name);
     }
 }
 

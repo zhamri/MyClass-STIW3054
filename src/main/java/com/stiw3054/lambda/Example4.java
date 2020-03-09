@@ -3,35 +3,21 @@ package com.stiw3054.lambda;
 public class Example4 {
     public static void main(String[] args) {
 
-        //with type declaration
-        MathOperation addition = (int a, int b) -> a + b;
-
-        //with out type declaration
-        MathOperation subtraction = (a, b) -> a - b;
-
-        //with return statement along with curly braces
-        MathOperation multiplication = (int a, int b) -> {
-            return a * b;
-        };
-
-        //without return statement and without curly braces
-        MathOperation division = (int a, int b) -> a / b;
-
-        System.out.println(addition.operation(10, 5));
-        System.out.println(subtraction.operation(10, 5));
-        System.out.println(multiplication.operation(10, 5));
-        System.out.println(division.operation(10, 5));
+        Greeting g1 = (n) -> "Hello " + n;
+        Example4 example4 = new Example4();
+        example4.displayHello(g1, "zhamri");
     }
 
-    interface MathOperation {
-        int operation(int a, int b);
+    private void displayHello(Greeting greeting, String name) {
+        System.out.println(greeting.hello(name));
+    }
+
+    interface Greeting {
+        String hello(String name);
     }
 }
 
 
 /***
- * 15
- * 5
- * 50
- * 2
+ * Hello zhamri
  */
