@@ -3,7 +3,7 @@ package com.stiw3054.shutdown;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Shutdown {
+public class Shutdown1 {
 
     public static void main(String[] args) {
 
